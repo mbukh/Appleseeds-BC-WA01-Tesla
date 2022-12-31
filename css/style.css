@@ -1,0 +1,10 @@
+@import "./_reset.scss";
+
+.main-canvas {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.header-wrapper {
+    
+}
