@@ -14,7 +14,8 @@ body {
         Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 14rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
 
     min-width: 1200px;
     overflow-x: hidden;
@@ -27,6 +28,7 @@ body {
 
 body {
     --header-height: 56px;
+    --tds-bezier: cubic-bezier(0.5, 0, 0, 0.75);
 }
 
 /* utilities */
@@ -43,6 +45,7 @@ body {
 .header-wrapper {
     position: absolute;
     min-width: 100vw;
+    z-index: 999;
 }
 
 .global-menu {
@@ -52,8 +55,7 @@ body {
 
 .global-menu a {
     color: #fff;
-    font-weight: 400;
-    /* line-height: 2; */
+    font-weight: 500;
 }
 
 .global-menu h1 {
@@ -64,24 +66,19 @@ body {
 }
 
 .global-menu h1 a {
-    display: block;
     min-height: 32px;
     padding: 0 16px;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .global-menu h1 a svg {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
     width: 120px;
     height: 24px;
 }
 
 .global-menu ol {
     list-style: none;
-    /* height: var(--header-height); */
 }
 .global-menu ol li {
     float: left;
@@ -163,4 +160,16 @@ body {
     line-height: 48px;
     font-weight: 500;
     letter-spacing: -0.6px;
+}
+
+#model3 .hero-content p {
+    padding: 6px 24px 14px;
+}
+#model3 .hero-content p a {
+    box-shadow: 0 1px 0 0 currentColor;
+    transition: box-shadow 0.33s var(--tds-bezier), color 0.33s ease;
+}
+#model3 .hero-content p a:hover {
+    box-shadow: 0 2px 0 0 currentColor;
+    transition: 0.33s var(--tds-bezier), color 0.33s ease;
 }
