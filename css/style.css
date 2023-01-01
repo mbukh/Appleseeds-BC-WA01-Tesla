@@ -2,7 +2,7 @@
 
 @import "./resets/normalize.css";
 @import "./resets/reset.local.css";
-@import url("/Gotham-Font/gotham.css");
+@import url("../Gotham-Font/gotham.css");
 
 /* typography by Elad Shechter */
 
