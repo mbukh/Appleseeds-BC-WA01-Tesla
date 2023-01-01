@@ -11,6 +11,7 @@
 </head>
 
 <body>
+	<!-- <div class="banner"></div> -->
 	<div class="main-canvas">
 
 		<div class="header-wrapper">
@@ -62,14 +63,12 @@
 									<section class="badge badge1">
 										<section class="badge-seedometer">
 											<div class="speedometer">
-												<div class="dial">
-													<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-														viewBox="0 0 40 21" fill="var(--fill-white)">
-														<path
-															d="M 39.999999,19.798617 A 19.824417,19.633985 0 0 0 34.877782,6.6213841 L 34.16909,5.8402141 C 26.397915,-1.9017959 13.745528,-1.9531229 5.9107311,5.7258771 A 19.91037,19.719113 0 0 0 1.8907042e-4,19.833252 V 21 H 3.9064221 V 19.833252 H 2.3727481 A 17.490621,17.322608 0 0 1 6.8692771,8.2425621 l 1.181013,1.060755 0.778213,-0.874643 -1.18017,-1.038221 A 17.570675,17.401893 0 0 1 19.4513,2.4230131 v 2.227086 h 1.180592 v -2.273822 a 17.589214,17.420254 0 0 1 11.802124,5.002908 l -1.179328,0.991068 0.778213,0.874643 1.180171,-1.014019 a 17.484722,17.316765 0 0 1 4.461979,11.5447899 h -1.582128 v 1.165911 h 3.907076 z">
-														</path>
-													</svg>
-												</div>
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 40 21" fill="var(--fill-white)">
+													<path
+														d="M 39.999999,19.798617 A 19.824417,19.633985 0 0 0 34.877782,6.6213841 L 34.16909,5.8402141 C 26.397915,-1.9017959 13.745528,-1.9531229 5.9107311,5.7258771 A 19.91037,19.719113 0 0 0 1.8907042e-4,19.833252 V 21 H 3.9064221 V 19.833252 H 2.3727481 A 17.490621,17.322608 0 0 1 6.8692771,8.2425621 l 1.181013,1.060755 0.778213,-0.874643 -1.18017,-1.038221 A 17.570675,17.401893 0 0 1 19.4513,2.4230131 v 2.227086 h 1.180592 v -2.273822 a 17.589214,17.420254 0 0 1 11.802124,5.002908 l -1.179328,0.991068 0.778213,0.874643 1.180171,-1.014019 a 17.484722,17.316765 0 0 1 4.461979,11.5447899 h -1.582128 v 1.165911 h 3.907076 z">
+													</path>
+												</svg>
 												<div class="inner-circle">
 													<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 28 14" fill="var(--fill-white)">
@@ -88,20 +87,36 @@
 												</div>
 											</div>
 											<div class="digits">
-												<span>3</span>
+												<span class="int">3</span>
 												<span>.</span>
-												<span>1</span>
-												<span>s</span>
+												<span class="dec">1</span>
+												<span class="s">s</span>
 											</div>
 										</section>
-										<p>0-60 mph*</p>
+										<p class="caption">0-60 mph*</p>
 									</section>
-									<section class="badge badge2"></section>
-									<section class="badge badge3"></section>
-									<section class="badge badge4"></section>
+									<section class="badge badge2">
+										<div class="digits">
+											<span class="int">358</span>
+											<span class="s">mi</span>
+										</div>
+										<p class="caption">Range (EPA est.)</p>
+									</section>
+
+									<section class="badge badge3">
+										<div class="digits">
+											AWD
+										</div>
+										<p class="caption">Dual Motor</p>
+									</section>
+
+									<section class="badge badge4">
+										<a href="#" class="btn">Buy Now</a>
+									</section>
 								</section>
 
-								<div class="disclamer"></div>
+
+								<div class="disclaimer"></div>
 
 								<div class="chevron">
 									<a href="#">
@@ -123,11 +138,37 @@
 				</section>
 
 				<section class="showcase" id="safety">
+					<div class="gallery">
+						<img src="./img/model-3-hero-a-desktop.jpeg" alt="" srcset="">
+					</div>
+					<div class="safety-info">
+						<span>Safety</span>
+						<h2>Built for safety</h2>
+						<p>Safety is the most important part of every Tesla. We design our vehicles <a href="#">to
+								exceed safety
+								standards</a>.</p>
+						<p><b>5-Star Rating</b>
+							Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
+						<p><b>Top Safety Pick+</b>
+							Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness
+							and front crash prevention categories.</p>
+					</div>
 				</section>
 
 			</div>
 		</main>
 	</div>
+
+
+	<a href="#" class="floating-chat">
+		<div class="svg-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" class="tw-chat--tds-icon tw-chat--avaya-chat__bubble_icon">
+				<path
+					d="M19.5 4h-15A2.5 2.5 0 0 0 2 6.5v9A2.5 2.5 0 0 0 4.5 18H7v2.07a.928.928 0 0 0 1.507.725l3.22-2.576A1 1 0 0 1 12.35 18h7.15a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 19.5 4zm1 11.5a1 1 0 0 1-1 1h-7.15a2.5 2.5 0 0 0-1.56.548L8.5 18.879V17a.5.5 0 0 0-.5-.5H4.5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h15c.551 0 1 .449 1 1v9zM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+				</path>
+			</svg>
+		</div>
+	</a>
 </body>
 
 </html>
