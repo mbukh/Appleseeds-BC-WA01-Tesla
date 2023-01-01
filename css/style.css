@@ -1,7 +1,7 @@
 /* https://elad.medium.com/normalize-css-or-css-reset-9d75175c5d1e */
 
-@import "./resets/normalize.css";
-@import "./resets/reset.local.css";
+@import "resets/normalize.css";
+@import "resets/reset.local.css";
 @import url("../Gotham-Font/gotham.css");
 
 /* typography by Elad Shechter */
@@ -171,4 +171,3 @@ body {
     box-shadow: 0 2px 0 0 currentColor;
     transition: 0.33s var(--tds-bezier), color 0.33s ease;
 }
-
